@@ -11,7 +11,7 @@ Prerquisites
 Steps
 - Clone the Bitbucket project:
 ```
-git clone https://bitbucket.org/case-2-tech-blog-website/techblogwebsite.git
+git clone https://github.com/efepisirici/Cucumber-Playwright-Test.git
 ```
 - Change to the git repository and run Maven:
 ```
