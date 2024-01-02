@@ -9,7 +9,7 @@ Prerquisites
 - Maven 3 must be installed
 
 Steps
-- Clone the Bitbucket project:
+- Clone project:
 ```
 git clone https://github.com/efepisirici/Cucumber-Playwright-Test.git
 ```
