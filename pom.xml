@@ -70,45 +70,16 @@
 
          <build>
              <plugins>
-                 <plugin>
-                     <artifactId>maven-surefire-plugin</artifactId>
-                     <version>3.0.0</version>
-                     <configuration>
-                         <includes>
-                             <include>**/RunCucumberTest.java</include>
-                         </includes>
-                         <argLine>
-                             -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-                         </argLine>
-                         <systemProperties>
-                             <property>
-                                 <name>allure.results.directory</name>
-                                 <value>${project.basedir}/allure-results</value>
-                             </property>
-                             <property>
-                                 <name>junit.jupiter.extensions.autodetection.enabled</name>
-                                 <value>true</value>
-                             </property>
-                         </systemProperties>
-                     </configuration>
-                     <dependencies>
-                         <dependency>
-                             <groupId>org.aspectj</groupId>
-                             <artifactId>aspectjweaver</artifactId>
-                             <version>${aspectj.version}</version>
-                         </dependency>
-                         <dependency>
-                             <groupId>org.junit.jupiter</groupId>
-                             <artifactId>junit-jupiter-api</artifactId>
-                             <version>5.8.2</version>
-                         </dependency>
-                         <dependency>
-                             <groupId>org.junit.jupiter</groupId>
-                             <artifactId>junit-jupiter-engine</artifactId>
-                             <version>5.8.2</version>
-                         </dependency>
-                     </dependencies>
-                 </plugin>
+                  <plugin>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>3.0.0</version>
+                    <configuration>
+                      <includes>
+                        <include>**/RunCucumberTest.java</include>
+                      </includes>
+                    </configuration>
+                  </plugin>
+
          
                  <plugin>
                      <groupId>io.qameta.allure</groupId>
